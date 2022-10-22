@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221021 10:46:17.496" rpa="false" schemaversion="3">
+<suite id="s1" name="TestCaseSearch" source="D:\workspace-test\workspace-robot-python\RobotFameworkXray\robot_framework\Tests\TestWebEbay\TestCaseSearch.robot">
+<test id="s1-t1" name="Test Search Five" line="10">
+<kw name="Start TestCase" library="OpenAndCloseBrowser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221021 10:46:18.170" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
+<status status="PASS" starttime="20221021 10:46:18.169" endtime="20221021 10:46:37.853"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221021 10:46:37.854" endtime="20221021 10:46:37.990"/>
+</kw>
+<status status="PASS" starttime="20221021 10:46:18.168" endtime="20221021 10:46:37.990"/>
+</kw>
+<kw name="Input Search Text and Click Search" library="Search">
+<arg>mobile</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textSearch}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221021 10:46:37.994" level="INFO">Typing text 'mobile' into text field 'xpath://input[@id='gh-ac']'.</msg>
+<status status="PASS" starttime="20221021 10:46:37.991" endtime="20221021 10:46:38.239"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btnSearch}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221021 10:46:38.241" level="INFO">Clicking button 'xpath://input[@id='gh-btn']'.</msg>
+<status status="PASS" starttime="20221021 10:46:38.240" endtime="20221021 10:46:44.230"/>
+</kw>
+<status status="PASS" starttime="20221021 10:46:37.990" endtime="20221021 10:46:44.230"/>
+</kw>
+<kw name="Verify Search Results" library="SearchResult">
+<arg>laptop</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>results for ${name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221021 10:46:45.162" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221021 10:46:45.164" level="FAIL">Page should have contained text 'results for laptop' but did not.</msg>
+<status status="FAIL" starttime="20221021 10:46:44.232" endtime="20221021 10:46:45.166"/>
+</kw>
+<status status="FAIL" starttime="20221021 10:46:44.230" endtime="20221021 10:46:45.168"/>
+</kw>
+<kw name="Finish TestCase" library="OpenAndCloseBrowser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221021 10:46:45.170" endtime="20221021 10:46:48.112"/>
+</kw>
+<status status="PASS" starttime="20221021 10:46:45.170" endtime="20221021 10:46:48.113"/>
+</kw>
+<doc>This test five</doc>
+<tag>DRJ-12</tag>
+<status status="FAIL" starttime="20221021 10:46:18.166" endtime="20221021 10:46:48.113">Page should have contained text 'results for laptop' but did not.</status>
+</test>
+<test id="s1-t2" name="Test Search Seven" line="17">
+<kw name="Start TestCase" library="OpenAndCloseBrowser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221021 10:46:48.117" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
+<status status="PASS" starttime="20221021 10:46:48.116" endtime="20221021 10:47:02.416"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221021 10:47:02.416" endtime="20221021 10:47:02.628"/>
+</kw>
+<status status="PASS" starttime="20221021 10:46:48.115" endtime="20221021 10:47:02.628"/>
+</kw>
+<kw name="Input Search Text and Click Search" library="Search">
+<arg>@@!!</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textSearch}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221021 10:47:02.631" level="INFO">Typing text '@@!!' into text field 'xpath://input[@id='gh-ac']'.</msg>
+<status status="PASS" starttime="20221021 10:47:02.630" endtime="20221021 10:47:02.878"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btnSearch}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221021 10:47:02.879" level="INFO">Clicking button 'xpath://input[@id='gh-btn']'.</msg>
+<status status="PASS" starttime="20221021 10:47:02.878" endtime="20221021 10:47:07.087"/>
+</kw>
+<status status="PASS" starttime="20221021 10:47:02.629" endtime="20221021 10:47:07.087"/>
+</kw>
+<kw name="Verify Search Results" library="SearchResult">
+<arg>@@!!</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>results for ${name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221021 10:47:07.849" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221021 10:47:07.850" level="FAIL">Page should have contained text 'results for @@!!' but did not.</msg>
+<status status="FAIL" starttime="20221021 10:47:07.088" endtime="20221021 10:47:07.850"/>
+</kw>
+<status status="FAIL" starttime="20221021 10:47:07.087" endtime="20221021 10:47:07.852"/>
+</kw>
+<kw name="Finish TestCase" library="OpenAndCloseBrowser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221021 10:47:07.854" endtime="20221021 10:47:11.867"/>
+</kw>
+<status status="PASS" starttime="20221021 10:47:07.853" endtime="20221021 10:47:11.868"/>
+</kw>
+<doc>This test seven</doc>
+<tag>DRJ-13</tag>
+<status status="FAIL" starttime="20221021 10:46:48.114" endtime="20221021 10:47:11.868">Page should have contained text 'results for @@!!' but did not.</status>
+</test>
+<status status="FAIL" starttime="20221021 10:46:17.501" endtime="20221021 10:47:11.870"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">DRJ-12</stat>
+<stat pass="0" fail="1" skip="0">DRJ-13</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="TestCaseSearch">TestCaseSearch</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
